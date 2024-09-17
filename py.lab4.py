@@ -133,7 +133,7 @@ def draw_sky(t, num_stars):
     for _ in range(num_stars):
         x = random.randint(-300, 300)
         y = random.randint(0, 300)
-        size = random.randint(10, 30)
+        size = random.randint(1, 42)
         draw_star(t, x, y, size)
 """
 # Example usage
@@ -157,7 +157,7 @@ draw_eye(t, 130, -160, 30)
 draw_mouth(t, 65, -225, 80)
 
 # Draw the night sky
-draw_sky(t, 30000)
+draw_sky(t, 42)
 
 # Close the turtle graphics window when clicked
 turtle.exitonclick()
